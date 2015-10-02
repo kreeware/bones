@@ -1,0 +1,15 @@
+<ul>
+  <li ng-repeat="bone in bones.each">
+    #{{bone.id}}. {{ bone.name }}
+    <button ng-click="bone.$delete()">
+      <i class="fa fa-times text-danger"></i>
+    </button>
+  </li>
+</ul>
+
+<form ng-submit="bones.create()">
+  <input ng-model="bones.createForm.name" placeholder="Create bone name">
+  <button class="btn-success" type="submit">Create</button>
+</form>
+
+<bone-collector></bone-collector>

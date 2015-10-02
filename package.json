@@ -1,0 +1,21 @@
+{
+  "name": "bones",
+  "version": "0.0.0",
+  "description": "Simple plugin bones in a pile.",
+  "main": "server/plugin.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "kibana",
+    "plugin"
+  ],
+  "author": "Spencer Alger <email@spalger.com>",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "angular-resource": "^1.2.29",
+    "boom": "^2.9.0",
+    "eslint-config-airbnb": "^0.1.0",
+    "joi": "^6.7.1"
+  }
+}

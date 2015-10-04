@@ -14,7 +14,7 @@ export default function bonesInit(server) {
           const id = idCounter++;
           const { name } = req.payload || {};
           const task = { id, name };
-          tasks.set(id, task);
+          tasks.set(`${id}`, task);
           reply(task).created(201);
         }
         break;
@@ -23,7 +23,6 @@ export default function bonesInit(server) {
         {
           const { id } = req.params;
           const { name } = req.payload || {};
-
           if (!tasks.has(id)) {
             reply(Boom.notFound());
           } else {
